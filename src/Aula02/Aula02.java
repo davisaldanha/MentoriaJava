@@ -101,8 +101,7 @@ public class Aula02 {
         //EXEMPLO
         
        int opcao;
-       
-             
+      
         do{
             System.out.printf("**** MENU ****\n"
                     + "1- INICIAR JOGO\n"
