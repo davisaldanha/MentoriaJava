@@ -62,6 +62,8 @@ public class Aula04 {
 //        }
         
         String [] alunos = new String[3];
+        double [] medias = new double[3];
+        double soma=0;
         
         for(int i=0; i<alunos.length;i++){
             System.out.print("Nome do Aluno: ");
@@ -81,8 +83,12 @@ public class Aula04 {
         for(int linha=0;linha<notas.length;linha++){
             System.out.printf("%s: ", alunos[linha]);
             for(int coluna=0;coluna<notas[0].length;coluna++){
-                System.out.printf("%.1f\t", notas[linha][coluna]);    
+                System.out.printf("%.1f\t", notas[linha][coluna]); 
+                soma += notas[linha][coluna];
             }
+            medias[linha] = soma/3;
+            System.out.printf("%.1f", medias[linha]);
+            soma=0;
             System.out.println("");
         }
         
